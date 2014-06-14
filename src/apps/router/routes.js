@@ -1,5 +1,7 @@
 define(["routie"], function() {
 
+	'use strict';
+	
 	routie({
 		'': function() {
 			require(['views/homeView'], function(HomeView) {

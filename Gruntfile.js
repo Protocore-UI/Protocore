@@ -28,6 +28,7 @@ module.exports = function(grunt) {
                 "browser": true,
                 "unused": true,
                 "proto": true,
+                "expr": true,
                 "globals": {
                     "jQuery": true,
                     "define": true,
