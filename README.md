@@ -1,4 +1,4 @@
-# Protocore 
+# Protocore [![GitHub version](https://badge.fury.io/gh/hegdeashwin%2FProtocore.svg)](http://badge.fury.io/gh/hegdeashwin%2FProtocore)
 
 [![Build Status](https://travis-ci.org/hegdeashwin/Protocore.svg?branch=master)](https://travis-ci.org/hegdeashwin/Protocore)   [![Dependency Status](https://gemnasium.com/hegdeashwin/Protocore.svg)](https://gemnasium.com/hegdeashwin/Protocore)   [![Built with Grunt](http://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/) 
 
