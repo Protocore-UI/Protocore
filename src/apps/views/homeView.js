@@ -12,9 +12,6 @@ define(function(require) {
 
 		this.render = function() {
 			$('body').html(homeTemplate);
-		},
-
-		this.initialize();
-
+		};
 	};
 });

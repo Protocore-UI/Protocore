@@ -6,13 +6,13 @@ define(["routie"], function() {
 		'': function() {
 			require(['views/homeView'], function(HomeView) {
 				var homeView = new HomeView();
-				homeView.render();
+				homeView.initialize();
 			});
 		},
 		'about': function() {
 			require(['views/aboutView'], function(AboutView) {
 				var aboutView = new AboutView();
-				aboutView.render();
+				aboutView.initialize();
 			});
 		}
 	});
