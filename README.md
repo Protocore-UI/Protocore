@@ -79,7 +79,7 @@ Following are the default Grunt plugins that has been integrated with Protocore 
 **Individual tasks**
 
 | Grunt Plugin 			 | Command                  | Task Performed              |
-| -----------------------|:------------------------:|:---------------------------:|
+|:-----------------------|:------------------------|:---------------------------|
 | grunt-htmlhint		 | grunt htmllint           | Detect errors and issues for HTML documents for index.html and templates. |
 | grunt-contrib-csslint	 | grunt csslint            | Detect errors and issues for CSS stylesheets. |
 | grunt-contrib-jshint	 | grunt jshint             | Detect errors and issues for JavaScript. |
@@ -91,7 +91,7 @@ Following are the default Grunt plugins that has been integrated with Protocore 
 **Combine tasks**
 
 | Command                     | Task performed              |
-| --------------------------- |:---------------------------:|
+|:--------------------------- |:---------------------------|
 | grunt default               | Executing this command will perform the task to detect errors and issues for HTML, CSS, JavaScript and less compilation to CSS. It includes jshint, jscs, htmlhint, csslint, less:readyMade, less:customMade. |
 | grunt build              	  | Executing this command will perform the ```default``` task including clear and building production build. |
 | grunt compileless           | Executing this command will perform only less compilation to CSS which includes two sub-task ```less:readyMade```, ```less:customMade```. |
