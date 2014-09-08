@@ -43,8 +43,8 @@
         "grunt-strip": "~0.2.1",
         "grunt-shell": "~1.1.1",
         "grunt-contrib-htmlmin": "~0.3.0",
-        "grunt-autoprefixer": "~0.8.1",
-        "time-grunt": "~0.4.0"
+        "grunt-autoprefixer": "~1.0.1",
+        "time-grunt": "~1.0.0"
     },
     "keywords": [
         "javascript", "jquery", "framework", "web", "rest", "restful", "node", "express", "architecture"
