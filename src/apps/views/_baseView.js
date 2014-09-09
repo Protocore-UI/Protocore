@@ -4,7 +4,7 @@ define(function(require) {
 	var $ = require('jquery');
 
 	var BaseView = function(el, template) {
-		this.el = el;
+		this.el = el || 'body';
 
 		this.template = template;
 	};
@@ -18,7 +18,9 @@ define(function(require) {
 	BaseView.prototype.render = function() {
 		console.log("LOG: Executed Baseview Render");
 
-		$(this.el).html(this.template);
+		if (this.template && this.el) {
+			$(this.el).html(this.template);
+		}
 	};
 
 	return BaseView;
