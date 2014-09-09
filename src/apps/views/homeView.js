@@ -1,17 +1,16 @@
 define(function(require) {
 	'use strict';
 
-	var $ = require('jquery'),
-		homeTemplate = require('text!templates/homeTpl.html');
+	var HomeTemplate = require('text!templates/homeTpl.html'),
+		BaseView = require('views/_baseView');
 
-	return function() {
+	var HomeView = function() {
 
-		this.initialize = function() {
-			this.render();
-		},
-
-		this.render = function() {
-			$('body').html(homeTemplate);
-		};
+		// @params: el (DOM Reference), template
+		BaseView.call(this, 'body', HomeTemplate);
 	};
+
+	HomeView.prototype = new BaseView();
+
+	return HomeView;
 });
