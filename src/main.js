@@ -20,6 +20,7 @@ requirejs.config({
         'routie': '../systems/libs/routie.min',
         'text': '../systems/libs/text.min',
         'handlebars': '../systems/libs/handlebars.min',
+        'swag': '../systems/libs/swag.min',
         'template': '../systems/utilities/hd-template-mapper',
         'templates': '../../templates'
     },
@@ -42,6 +43,10 @@ requirejs.config({
         },
         handlebars: {
             exports: 'Handlebars'
+        },
+        swag: {
+            deps: ['handlebars']
+            exports: 'Swag'
         }
     }
 });
