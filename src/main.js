@@ -18,6 +18,9 @@ requirejs.config({
         'json3': '../systems/libs/json3.min',
         'text': '../systems/libs/text',
         'routie': '../systems/libs/routie.min',
+        'text': '../systems/libs/text.min',
+        'handlebars': '../systems/libs/handlebars.min',
+        'template': '../systems/utilities/hd-template-mapper',
         'templates': '../../templates'
     },
 
@@ -36,6 +39,9 @@ requirejs.config({
         },
         routie: {
             exports: 'routie'
+        },
+        handlebars: {
+            exports: 'Handlebars'
         }
     }
 });
