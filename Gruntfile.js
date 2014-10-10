@@ -115,6 +115,19 @@ module.exports = function(grunt) {
                 },
                 files: '<%= configuredFiles.htmlmin.files %>'
             }
+        },
+        qunit: {
+            options: {
+                '--web-security': 'no',
+                coverage: {
+                    src: ['src/**/*.js'],
+                    instrumentedFiles: 'temp/',
+                    htmlReport: 'report/coverage',
+                    coberturaReport: 'report/'
+                },
+                timeout: 10000
+            },
+            all: ['tests/**/*.html']
         }
     });
 
@@ -132,6 +145,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-htmlhint');
     grunt.loadNpmTasks('grunt-contrib-htmlmin');
     grunt.loadNpmTasks('grunt-autoprefixer');
+    grunt.loadNpmTasks('grunt-contrib-qunit');
 
     /**
      * Define tasks : Tasks for development eco - system.
@@ -171,5 +185,10 @@ module.exports = function(grunt) {
      * Define sub-tasks : Alias for `autofix`
      */
     grunt.registerTask('autofix', ['autoprefixer']);
+
+    /**
+     * Define sub-tasks : Alias for `tests`
+     */
+    grunt.registerTask('tests', ['qunit']);
 
 };
