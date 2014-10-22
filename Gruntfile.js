@@ -10,6 +10,9 @@ module.exports = function(grunt) {
      * Setup configuration
      */
     grunt.initConfig({
+        pkg: grunt.file.readJSON('config/banner.json'),
+        buildTags: "/* Project Name : <%= pkg.application.name %> Release version : <%= pkg.application.version %> */",
+
         configuredFiles: grunt.file.readJSON('config/servefiles.json'),
         clean: {
             build: ['prod']
@@ -24,7 +27,7 @@ module.exports = function(grunt) {
                 jshintrc: 'config/.jshintrc',
                 ignores: '<%= configuredFiles.jshint.ignore %>'
             },
-            all: '<%= configuredFiles.jshint.files %>'            
+            all: '<%= configuredFiles.jshint.files %>'
         },
         jscs: {
             options: {
@@ -32,13 +35,18 @@ module.exports = function(grunt) {
             },
             src: '<%= configuredFiles.jscs.files %>',
         },
+        jsonlint: {
+            files: {
+                src: '<%= configuredFiles.jsonlint %>'
+            }
+        },
         csslint: {
             strict: {
                 options: {
                     csslintrc: 'config/.csslintrc',
                     ignores: '<%= configuredFiles.csslint.ignore %>'
                 },
-                src: '<%= configuredFiles.csslint.files %>'                
+                src: '<%= configuredFiles.csslint.files %>'
             }
         },
         htmlhint: {
@@ -55,7 +63,7 @@ module.exports = function(grunt) {
                     ignores: '<%= configuredFiles.htmlhint.Templates.ignore %>'
                 },
                 src: '<%= configuredFiles.htmlhint.Templates.files %>'
-                
+
             }
         },
         less: {
@@ -83,7 +91,7 @@ module.exports = function(grunt) {
                 options: {
                     spawn: false
                 },
-                files: '<%= configuredFiles.watch.less.files %>' ,
+                files: '<%= configuredFiles.watch.less.files %>',
                 tasks: ['less:customMade']
             }
         },
@@ -146,6 +154,8 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-htmlmin');
     grunt.loadNpmTasks('grunt-autoprefixer');
     grunt.loadNpmTasks('grunt-contrib-qunit');
+    grunt.loadNpmTasks('grunt-jsonlint');
+    grunt.loadNpmTasks('grunt-banner');
 
     /**
      * Define tasks : Tasks for development eco - system.
@@ -155,6 +165,7 @@ module.exports = function(grunt) {
         'csslint',
         'jshint',
         'jscs',
+        'jsonlint',
         'less:readyMade',
         'less:customMade',
         'autofix'
@@ -168,12 +179,14 @@ module.exports = function(grunt) {
         'htmlhint',
         'csslint',
         'jshint',
+        'jsonlint',
         'compileless',
         'autofix',
         'clean',
         'shell',
         'strip',
-        'htmlmin'
+        'htmlmin',
+        'usebanner'
     ]);
 
     /**
