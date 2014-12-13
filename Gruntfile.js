@@ -14,12 +14,25 @@ module.exports = function(grunt) {
         buildTags: "/* Project Name : <%= pkg.application.name %> Release version : <%= pkg.application.version %> */",
 
         configuredFiles: grunt.file.readJSON('config/servefiles.json'),
+        
         clean: {
             build: ['prod']
         },
         shell: {
             uglify: {
                 command: 'node tools/r.js -o config/build.js'
+            }
+        },
+        usebanner: {
+            buildTags: {
+                options: {
+                    position: 'top',
+                    banner: '<%= buildTags %>',
+                    linebreak: true
+                },
+                files: {
+                    src: '<%= configuredFiles.usebanner %>'
+                }
             }
         },
         jshint: {
