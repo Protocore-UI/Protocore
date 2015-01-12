@@ -160,7 +160,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-strip');
     grunt.loadNpmTasks('grunt-shell');
     grunt.loadNpmTasks('grunt-contrib-jshint');
-    grunt.loadNpmTasks('grunt-jscs-checker');
+    grunt.loadNpmTasks('grunt-jscs');
     grunt.loadNpmTasks('grunt-contrib-less');
     grunt.loadNpmTasks('grunt-contrib-csslint');
     grunt.loadNpmTasks('grunt-htmlhint');
