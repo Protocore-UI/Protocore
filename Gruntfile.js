@@ -108,6 +108,18 @@ module.exports = function(grunt) {
                 tasks: ['less:customMade']
             }
         },
+        qunit: {
+            options: {
+                '--web-security': 'no',
+                coverage: {
+                    src: ['src/**/*.js'],
+                    instrumentedFiles: 'temp/',
+                    htmlReport: 'report/coverage',
+                    coberturaReport: 'report/'
+                }
+            },
+            all: ['tests/**/*.html']
+        },
         strip: {
             main: {
                 src: 'prod/src/apps/**/*.js',
@@ -119,7 +131,7 @@ module.exports = function(grunt) {
         },
         autoprefixer: {
             options: {
-                'browsers': ['ie 8', 'ie 9', 'Firefox >= 17', 'ios 7', 'last 10 Chrome versions', 'last 2 Safari versions', 'Android 4']
+                'browsers': ['last 2 versions']
             },
             multiple: {
                 expand: true,
@@ -136,19 +148,6 @@ module.exports = function(grunt) {
                 },
                 files: '<%= configuredFiles.htmlmin.files %>'
             }
-        },
-        qunit: {
-            options: {
-                '--web-security': 'no',
-                coverage: {
-                    src: ['src/**/*.js'],
-                    instrumentedFiles: 'temp/',
-                    htmlReport: 'report/coverage',
-                    coberturaReport: 'report/'
-                },
-                timeout: 10000
-            },
-            all: ['tests/**/*.html']
         }
     });
 
@@ -160,7 +159,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-strip');
     grunt.loadNpmTasks('grunt-shell');
     grunt.loadNpmTasks('grunt-contrib-jshint');
-    grunt.loadNpmTasks('grunt-jscs-checker');
+    grunt.loadNpmTasks('grunt-jscs');
     grunt.loadNpmTasks('grunt-contrib-less');
     grunt.loadNpmTasks('grunt-contrib-csslint');
     grunt.loadNpmTasks('grunt-htmlhint');
