@@ -17,7 +17,9 @@ requirejs.config({
         'jquery': '../systems/libs/jquery.min',
         'json3': '../systems/libs/json3.min',
         'text': '../systems/libs/text',
-        'routie': '../systems/libs/routie.min',
+        'signals': '../systems/libs/signals.min',
+        'hasher': '../systems/libs/hasher.min',
+        'crossroads': '../systems/libs/crossroads.min',
         'text': '../systems/libs/text.min',
         'handlebars': '../systems/libs/handlebars.min',
         'swag': '../systems/libs/swag.min',
@@ -38,8 +40,16 @@ requirejs.config({
         text: {
             exports: 'text'
         },
-        routie: {
-            exports: 'routie'
+        signals: {
+            exports: 'signals'
+        },
+        hasher: {
+            deps: ['signals'],
+            exports: 'hasher'
+        },
+        crossroads: {
+            deps: ['signals', 'hasher'],
+            exports: 'crossroads'
         },
         handlebars: {
             exports: 'Handlebars'
