@@ -18,6 +18,7 @@ requirejs.config({
         'json3': '../systems/libs/json3.min',
         'text': '../systems/libs/text',
         'signals': '../systems/libs/signals.min',
+        'hasher': '../systems/libs/hasher.min',
         'crossroads': '../systems/libs/crossroads.min',
         'text': '../systems/libs/text.min',
         'handlebars': '../systems/libs/handlebars.min',
@@ -42,8 +43,12 @@ requirejs.config({
         signals: {
             exports: 'signals'
         },
-        crossroads: {
+        hasher: {
             deps: ['signals'],
+            exports: 'hasher'
+        },
+        crossroads: {
+            deps: ['signals', 'hasher'],
             exports: 'crossroads'
         },
         handlebars: {
