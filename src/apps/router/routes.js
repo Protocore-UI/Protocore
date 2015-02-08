@@ -4,7 +4,7 @@ define(["signals", "hasher", "crossroads"], function(signals, hasher, crossroads
 	
 	var router = crossroads.create();
 	
-	var parseHash = function(newHash, oldHash){
+	var parseHash = function(newHash){
 		router.parse(newHash);
 	};
 
