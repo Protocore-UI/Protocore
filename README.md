@@ -1,4 +1,4 @@
-# Protocore [![GitHub version](http://img.shields.io/badge/version-0.0.2-brightgreen.svg)](https://github.com/hegdeashwin/Protocore/releases)
+# Protocore [![GitHub version](http://img.shields.io/badge/version-0.0.3-brightgreen.svg)](https://github.com/hegdeashwin/Protocore/releases)
 
 [![Build Status](https://travis-ci.org/hegdeashwin/Protocore.svg?branch=master)](https://travis-ci.org/hegdeashwin/Protocore)   [![Dependency Status](https://gemnasium.com/hegdeashwin/Protocore.svg)](https://gemnasium.com/hegdeashwin/Protocore)  [![Node.js version](http://img.shields.io/badge/Node.js-%3E%200.10-brightgreen.svg)](https://github.com/hegdeashwin/Protocore/)  [![Built with Grunt](http://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)  [![License version](http://img.shields.io/badge/License-MIT-red.svg)](https://github.com/hegdeashwin/Protocore#license)
 
@@ -29,6 +29,11 @@ Install dependencies:
 npm install
 ```
 
+Generate CSS files from LESS: (First command after installing dependencies)
+```
+grunt compileless
+```
+
 To start the development server:
 ```
 node server.js
@@ -45,7 +50,7 @@ NODE_ENV=production node server.js
 
 Server layer
 ============
-The server side codebase resides in the ```server.js``` and ```config.js``` files. By default, the server layer is written in JavaScript (Node.js with Express 4.0) which can be configured and flexible to work with any server side scripting language like Java, PHP, ASP.NET or others. As client and server layer are seperate entity.
+The server side codebase resides in the ```server.js``` and ```config.js``` files. By default, the server layer is written in JavaScript (Node.js with Express 4.x) which can be configured and flexible to work with any server side scripting language like Java, PHP, ASP.NET or others. As client and server layer are seperate entity.
 
 Client layer
 ============
@@ -55,9 +60,16 @@ The client side codebase resides in the ```src``` folder. This folder contains f
 +-- /stylesheets
 	+--/css
 	+--/less
+		+--/common
+		+--/base
+		+--/layout
+		+--/modules
+		+--/state
+		+--/theme
 +-- /systems
 	+--/frameworks
 	+--/libs
+	+--/utilities
 +-- /templates
 +-- /assets
 	+--/fonts
@@ -67,6 +79,10 @@ The client side codebase resides in the ```src``` folder. This folder contains f
 	+--/views
 	+--/router
 ```
+
+Stylesheet layer
+================
+The codebase comes with LESS setup with a ```Scalable and Modular Architecture for CSS (SMACSS)``` approach.  SMACSS is a way to examine your design process and as a way to fit those rigid frameworks into a flexible thought process. It is an attempt to document a consistent approach to site development when using CSS.
 
 Task automation
 ===============
@@ -98,14 +114,6 @@ Following are the default Grunt plugins that has been integrated with Protocore 
 | grunt compileless           | Executing this command will perform only less compilation to CSS which includes two sub-task ```less:readyMade```, ```less:customMade```. |
 | grunt tests		          | Executing this command will perform unit testing. |
 
-Libraries/frameworks used
-=========================
-| Name                        											 | Version        |
-| ---------------------------------------------------------------------- |:--------------:|
-| <a href="//jquery.com/" target="_blank">jQuery</a>        			 | 2.0.3 		  |
-| <a href="//requirejs.org/" target="_blank">Require (AMD)</a>   		 | 1.2.10 		  |
-| <a href="//getbootstrap.com/" target="_blank">Twitter Bootstrap</a>  	 | 3.1.0  		  |
-
 Author & Contributors
 =====================
 Developed &amp; maintained by author: <b>Ashwin Hegde</b><br>
@@ -120,7 +128,7 @@ License
 =======
 The MIT License (MIT)
 
-Copyright (c) 2014 Ashwin Hegde
+Copyright (c) 2015 Ashwin Hegde
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in
