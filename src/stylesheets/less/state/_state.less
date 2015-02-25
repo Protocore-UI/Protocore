@@ -11,3 +11,27 @@
 a, a:focus, a:hover {
     color: @gray;
 }
+
+.site-wrapper {
+	.site-wrapper-inner {
+		.masthead-nav > li > a {
+			padding-left: 0;
+			padding-right: 0;
+			font-size: 16px;
+			color: @gray; /* IE8 proofing */
+			border-bottom: 2px solid transparent;
+		}
+
+		.masthead-nav > li > a:hover,
+		.masthead-nav > li > a:focus {
+			background-color: transparent;
+		}
+
+		.masthead-nav > .active > a,
+		.masthead-nav > .active > a:hover,
+		.masthead-nav > .active > a:focus {
+			color: @gray;
+			border-bottom-color: @gray;
+		}
+	}
+}
