@@ -5,7 +5,7 @@ requirejs.config({
     /***
      * The path where your JavaScripts files are located.
      */
-    baseUrl: '../src/apps/',
+    baseUrl: '../src',
 
     /***
      * Path config is also part of Require and allows to define paths for vendors
@@ -45,7 +45,7 @@ requirejs.config({
             exports: 'Handlebars'
         },
         swag: {
-            deps: ['handlebars']
+            deps: ['handlebars'],
             exports: 'Swag'
         }
     }

@@ -2,7 +2,7 @@ define(function(require) {
 	'use strict';
 
 	var AboutTemplate = require('template!templates/aboutTpl'),
-		BaseView = require('views/_baseView');
+		BaseView = require('apps/views/_baseView');
 
 	var AboutView = function() {
 

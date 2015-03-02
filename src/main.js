@@ -5,7 +5,7 @@ requirejs.config({
     /***
      * The path where your JavaScripts files are located.
      */
-    baseUrl: './apps/',
+    baseUrl: '.',
 
     /***
      * Path config is also part of Require and allows to define paths for vendors
@@ -14,15 +14,15 @@ requirejs.config({
      */
     paths: {
         /*** List of frameworks/libraries to be included in the codebase. ***/
-        'jquery': '../systems/libs/jquery.min',
-        'json3': '../systems/libs/json3.min',
-        'signals': '../systems/libs/signals.min',
-        'hasher': '../systems/libs/hasher.min',
-        'crossroads': '../systems/libs/crossroads.min',
-        'text': '../systems/libs/text.min',
-        'handlebars': '../systems/libs/handlebars.min',
-        'swag': '../systems/libs/swag.min',
-        'template': '../systems/utilities/hb-template-mapper',
+        'jquery': 'systems/libs/jquery.min',
+        'json3': 'systems/libs/json3.min',
+        'signals': 'systems/libs/signals.min',
+        'hasher': 'systems/libs/hasher.min',
+        'crossroads': 'systems/libs/crossroads.min',
+        'text': 'systems/libs/text.min',
+        'handlebars': 'systems/libs/handlebars.min',
+        'swag': 'systems/libs/swag.min',
+        'template': 'systems/utilities/hb-template-mapper',
         'templates': '../../templates'
     },
 
@@ -60,4 +60,4 @@ requirejs.config({
     }
 });
 
-require(['router/routes']);
+require(['apps/router/routes']);
