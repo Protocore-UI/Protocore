@@ -16,7 +16,6 @@ requirejs.config({
         /*** List of frameworks/libraries to be included in the codebase. ***/
         'jquery': '../systems/libs/jquery.min',
         'json3': '../systems/libs/json3.min',
-        'text': '../systems/libs/text',
         'signals': '../systems/libs/signals.min',
         'hasher': '../systems/libs/hasher.min',
         'crossroads': '../systems/libs/crossroads.min',
