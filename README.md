@@ -114,6 +114,10 @@ Following are the default Grunt plugins that has been integrated with Protocore 
 | grunt compileless           | Executing this command will perform only less compilation to CSS which includes two sub-task ```less:readyMade```, ```less:customMade```. |
 | grunt tests		          | Executing this command will perform unit testing. |
 
+Special editions
+================
+<a href="https://github.com/hegdeashwin/protocore-cli" target="_blank">Protocore-cli</a> is a command line generator for Protocore. This tool will help to generate a walking application skeleton for a typical unstructured JavaScript/jQuery web apps.
+
 Author & Contributors
 =====================
 Developed &amp; maintained by author: <b>Ashwin Hegde</b><br>
