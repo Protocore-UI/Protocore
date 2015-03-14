@@ -42,6 +42,10 @@ or
 ```
 NODE_ENV=development node server.js
 ```
+or
+```
+npm start
+```
 
 To start the production server:
 ```
@@ -117,6 +121,19 @@ Following are the default Grunt plugins that has been integrated with Protocore 
 | grunt build              	  | Executing this command will perform the ```default``` task including clear and building production build. |
 | grunt compileless           | Executing this command will perform only less compilation to CSS which includes two sub-task ```less:readyMade```, ```less:customMade```. |
 | grunt tests		          | Executing this command will perform unit testing. |
+
+
+## Continuous Integration
+
+### Travis CI
+
+[Travis CI](https://travis-ci.org/hegdeashwin/Protocore/) is a continuous integration service, which can monitor GitHub for new commits
+to your repository and execute scripts such as building the app or running tests. The Protocore 
+contains a Travis configuration file, `.travis.yml`, which will cause Travis to run your tests 
+when you push to GitHub.
+
+You will need to enable the integration between Travis and GitHub. See the Travis website for more
+instruction on how to do this.
 
 ## Author & Contributors
 
