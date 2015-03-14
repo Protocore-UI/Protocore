@@ -5,8 +5,8 @@
 
 Protocore is an open source walking application skeleton for a typical unstructured JavaScript/jQuery web apps. You can use it to quickly bootstrap your unstructured JavaScript/jQuery web application projects.
 
-Prerequisites
-=============
+## Prerequisites
+
 As Protocore is based on JavaScript. It is assumed user already knows JavaScript and jQuery.
 
 For understanding Protocore, knowledge of following JavaScript libraries/frameworks are must.
@@ -15,8 +15,8 @@ For understanding Protocore, knowledge of following JavaScript libraries/framewo
 	<li>Bootstrap Framework 3.0 - a front-end framework for developing responsive, mobile first projects on the web. For more information visit <a href="//getbootstrap.com/" target="_blank">getbootstrap.com</a></li>
 </ul>
 
-Installation
-============
+## Installation
+
 Assuming that Git is already installed & running:
 ```
 git clone https://github.com/hegdeashwin/Protocore
@@ -42,18 +42,22 @@ or
 ```
 NODE_ENV=development node server.js
 ```
+or
+```
+npm start
+```
 
 To start the production server:
 ```
 NODE_ENV=production node server.js
 ```
 
-Server layer
-============
+## Server layer
+
 The server side codebase resides in the ```server.js``` and ```config.js``` files. By default, the server layer is written in JavaScript (Node.js with Express 4.x) which can be configured and flexible to work with any server side scripting language like Java, PHP, ASP.NET or others. As client and server layer are seperate entity.
 
-Client layer
-============
+## Client layer
+
 The client side codebase resides in the ```src``` folder. This folder contains following subfolders.
 
 ```
@@ -80,12 +84,12 @@ The client side codebase resides in the ```src``` folder. This folder contains f
 	+--/router
 ```
 
-Stylesheet layer
-================
+## Stylesheet layer
+
 The codebase comes with LESS setup with a ```Scalable and Modular Architecture for CSS (SMACSS)``` approach.  SMACSS is a way to examine your design process and as a way to fit those rigid frameworks into a flexible thought process. It is an attempt to document a consistent approach to site development when using CSS.
 
-Task automation
-===============
+## Task automation
+
 Protocore comes with Grunt ecosystem - a JavaScript task runner to perform repetitive tasks like minification, compilation, unit testing, linting etc. Many of the tasks you need are already available as published Grunt plugins.
 
 Few task automations has been configured to detect errors and potential problems in codebase and to enforce your team's coding conventions. 
@@ -114,8 +118,20 @@ Following are the default Grunt plugins that has been integrated with Protocore 
 | grunt compileless           | Executing this command will perform only less compilation to CSS which includes two sub-task ```less:readyMade```, ```less:customMade```. |
 | grunt tests		          | Executing this command will perform unit testing. |
 
-Author & Contributors
-=====================
+## Continuous Integration
+
+### Travis CI
+
+[Travis CI](https://travis-ci.org/hegdeashwin/Protocore/) is a continuous integration service, which can monitor GitHub for new commits
+to your repository and execute scripts such as building the app or running tests. The Protocore 
+contains a Travis configuration file, `.travis.yml`, which will cause Travis to run your tests 
+when you push to GitHub.
+
+You will need to enable the integration between Travis and GitHub. See the Travis website for more
+instruction on how to do this.
+
+## Author & Contributors
+
 Developed &amp; maintained by author: <b>Ashwin Hegde</b><br>
 Follow me at: <a href="https://github.com/hegdeashwin" target="_blank">github</a> | <a href="http://in.linkedin.com/in/hegdeashwin" target="_blank">Linkedin</a> | <a href="https://twitter.com/hegdeashwin3" target="_blank">Twitter</a>
 
@@ -124,8 +140,8 @@ We really appreciate all kind of contributions. Special thanks to <a href="//git
 To request a feature or you find any typo errors, enhancements or questions; please feel free to post it on following link, or vote for the ones that are already registered.
 <br>Tracking: <a href="https://github.com/hegdeashwin/Protocore/issues" target="_blank">https://github.com/hegdeashwin/Protocore/issues</a>
 
-License
-=======
+## License
+
 The MIT License (MIT)
 
 Copyright (c) 2015 Ashwin Hegde
