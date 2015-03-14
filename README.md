@@ -52,6 +52,10 @@ To start the production server:
 NODE_ENV=production node server.js
 ```
 
+## Protocore Generator
+
+<a href="https://github.com/hegdeashwin/protocore-cli" target="_blank">Protocore-cli</a> is a command line generator for Protocore. This tool will help to generate a walking application skeleton for a typical unstructured JavaScript/jQuery web apps.
+
 ## Server layer
 
 The server side codebase resides in the ```server.js``` and ```config.js``` files. By default, the server layer is written in JavaScript (Node.js with Express 4.x) which can be configured and flexible to work with any server side scripting language like Java, PHP, ASP.NET or others. As client and server layer are seperate entity.
@@ -117,6 +121,7 @@ Following are the default Grunt plugins that has been integrated with Protocore 
 | grunt build              	  | Executing this command will perform the ```default``` task including clear and building production build. |
 | grunt compileless           | Executing this command will perform only less compilation to CSS which includes two sub-task ```less:readyMade```, ```less:customMade```. |
 | grunt tests		          | Executing this command will perform unit testing. |
+
 
 ## Continuous Integration
 
