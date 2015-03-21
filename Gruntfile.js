@@ -21,8 +21,8 @@ module.exports = function(grunt) {
         shell: {
             uglify: {
                 command: [
-                    'node config/r.js -o config/config-optimize-build.js',
-                    'node config/r.js -o config/config-copy-build.js',
+                    'node config/r.js -o config/build/optimize-build.js',
+                    'node config/r.js -o config/build/copy-build.js',
                     'rm src/main-optimize.js',
                     'rm prod/main.js',
                     'mv prod/main-optimize.js prod/main.js'
