@@ -1,7 +1,7 @@
 ({
-    appDir: '../src',
-    baseUrl: '../src',
-    dir: '../prod',
+    appDir: '../../src',
+    baseUrl: '../../src',
+    dir: '../../prod',
     optimizeCss: "standard",
     fileExclusionRegExp: /.less$/
 })
