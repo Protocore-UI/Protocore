@@ -11,7 +11,7 @@ define(function(require) {
 	};
 
 	HomeView.prototype = new BaseView();
-	
+
 	HomeView.prototype.beforeRender = function() {
 		console.log("LOG: HomeView Before Render");
 	};

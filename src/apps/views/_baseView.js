@@ -17,18 +17,18 @@ define(function(require) {
 	BaseView.prototype.render = function() {
 		console.log("LOG: Executed Baseview Render");
 
-		if(this.beforeRender()) {
+		if (this.beforeRender()) {
 			this.beforeRender();
 		}
 
 		if (this.template && this.el) {
 			$(this.el).html(this.template);
 
-			if(this.afterRender()) {
+			if (this.afterRender()) {
 				this.afterRender();
 			}
 
-			if(this.eventsHash()) {
+			if (this.eventsHash()) {
 				this.eventsHash();
 			}
 		}
