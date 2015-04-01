@@ -14,14 +14,12 @@ requirejs.config({
      */
     paths: {
         /*** List of frameworks/libraries to be included in the codebase. ***/
-        'jquery': 'systems/libs/jquery.min',
-        'json3': 'systems/libs/json3.min',
-        'signals': 'systems/libs/signals.min',
-        'hasher': 'systems/libs/hasher.min',
-        'crossroads': 'systems/libs/crossroads.min',
-        'text': 'systems/libs/text.min',
-        'handlebars': 'systems/libs/handlebars.min',
-        'swag': 'systems/libs/swag.min',
+        'jquery': '../bower_components/jquery/jquery.min',
+        'signals': '../bower_components/js-signals/dist/signals.min',
+        'hasher': '../bower_components/hasher/dist/js/hasher.min',
+        'crossroads': '../bower_components/crossroads/dist/crossroads.min',
+        'text': '../bower_components/text/text.min',
+        'handlebars': '../bower_components/handlebars/handlebars.min',
         'template': 'systems/utilities/hb-template-mapper',
         'templates': '../../templates'
     },
@@ -33,9 +31,6 @@ requirejs.config({
      * See http://requirejs.org/docs/api.html#config-shim for more details.
      */
     shim: {
-        json3: {
-            exports: 'json3'
-        },
         text: {
             exports: 'text'
         },
@@ -52,10 +47,6 @@ requirejs.config({
         },
         handlebars: {
             exports: 'Handlebars'
-        },
-        swag: {
-            deps: ['handlebars'],
-            exports: 'Swag'
         }
     }
 });
