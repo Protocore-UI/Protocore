@@ -22,4 +22,4 @@ prod
 /src/systems/frameworks/bootstrap/css
 # Users Environment Variables
 .lock-wscript
-bower_components
+src/bower_components
