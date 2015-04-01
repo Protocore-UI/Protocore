@@ -22,11 +22,18 @@ Assuming that Git is already installed & running:
 git clone https://github.com/hegdeashwin/Protocore
 ```
 
-Assuming that Node.js is already installed & running, 
+Assuming that Node.js & Bower is already installed & running, 
 
 Install dependencies:
 ```
 npm install
+```
+
+Assuming that Bower is already installed & running, 
+
+Install client-side dependencies:
+```
+bower install
 ```
 
 Generate CSS files from LESS: (First command after installing dependencies)
