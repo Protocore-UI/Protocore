@@ -1,6 +1,6 @@
 {
     "name": "Protocore",
-    "version": "0.0.4",
+    "version": "0.0.5",
     "author": "Ashwin Hegde",
     "description": "Protocore is an open source walking application skeleton for a typical unstructured JavaScript/jQuery web apps. You can use it to quickly bootstrap your unstructured JavaScript/jQuery web application projects.",
     "contributors": [{
