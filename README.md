@@ -61,7 +61,9 @@ NODE_ENV=production node server.js
 
 ## Protocore Generator
 
-<a href="https://github.com/hegdeashwin/protocore-cli" target="_blank">Protocore-cli</a> is a command line generator for Protocore. This tool will help to generate a walking application skeleton for a typical unstructured JavaScript/jQuery web apps.
+[generator-protocore](https://github.com/hegdeashwin/generator-protocore) is a Yeoman generator for Protocore. The tool will help to generate walking application skeleton for a typical unstructured JavaScript/jQuery web apps.
+
+[Protocore-cli](https://github.com/hegdeashwin/protocore-cli) is a command line generator for Protocore. This tool will help to generate a walking application skeleton for a typical unstructured JavaScript/jQuery web apps.
 
 ## Server layer
 
