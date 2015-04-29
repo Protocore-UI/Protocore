@@ -1,7 +1,7 @@
+before_script:
+  - npm install -g bower
+  - bower install -f
+
 language: node_js
 node_js:
   - "0.10"
-before_install:
-  - sudo npm install
-  - sudo npm install bower -g
-  - bower install
