@@ -20,7 +20,6 @@ requirejs.config({
         'crossroads': 'bower_components/crossroads/dist/crossroads.min',
         'text': 'bower_components/requirejs-text/text',
         'handlebars': 'bower_components/handlebars/handlebars.min',
-        'bootstrap': 'bower_components/bootstrap/dist/js/bootstrap.min',
         'template': 'systems/utilities/hb-template-mapper',
         'templates': '../../templates'
     },
@@ -48,10 +47,6 @@ requirejs.config({
         },
         handlebars: {
             exports: 'Handlebars'
-        },
-        bootstrap: {
-            deps: ['jquery'],
-            exports: 'bootstrap'
         }
     }
 });
