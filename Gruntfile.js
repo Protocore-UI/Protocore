@@ -86,12 +86,6 @@ module.exports = function(grunt) {
             }
         },
         less: {
-            readyMade: {
-                options: {
-                    compress: true
-                },
-                files: '<%= configuredFiles.less.readyMade.files %>'
-            },
             customMade: {
                 options: {
                     compress: false
@@ -215,12 +209,12 @@ module.exports = function(grunt) {
     /**
      * Define sub-tasks : Tasks for Less compilation for development.
      */
-    grunt.registerTask('compileLessDev', ['less:readyMade', 'less:customMade']);
+    grunt.registerTask('compileLessDev', ['less:customMade']);
 
     /**
      * Define sub-tasks : Tasks for Less compilation for production.
      */
-    grunt.registerTask('compileLessProd', ['less:readyMade', 'less:prod']);
+    grunt.registerTask('compileLessProd', ['less:prod']);
 
     /**
      * Define sub-tasks : Alias for `autofix`
