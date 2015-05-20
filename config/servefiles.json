@@ -48,12 +48,6 @@
 		}
 	},
 	"less": {
-		"readyMade": {
-			"files": {
-				"src/bower_components/bootstrap/dist/css/bootstrap.min.css": "src/bower_components/bootstrap/less/bootstrap.less",
-				"src/bower_components/bootstrap/dist/css/bootstrap-theme.min.css": "src/bower_components/bootstrap/less/theme.less"
-			}
-		},
 		"customMade": {
 			"files": {
 				"src/stylesheets/css/consolidate.css": "src/stylesheets/less/_consolidate.less"
