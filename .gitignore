@@ -23,3 +23,5 @@ prod
 # Users Environment Variables
 .lock-wscript
 src/bower_components
+prod/bower_components
+prod/build.txt

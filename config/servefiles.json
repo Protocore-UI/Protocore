@@ -63,9 +63,7 @@
 	},
 	"htmlmin": {
 		"files": {
-			"prod/index.html": "prod/index.html",
-			"prod/templates/homeTpl.html": "prod/templates/homeTpl.html",
-			"prod/templates/aboutTpl.html": "prod/templates/aboutTpl.html"
+			"prod/index.html": "prod/index.html"
 		}
 	}
 }
