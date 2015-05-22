@@ -1,4 +1,4 @@
-# Protocore [![GitHub version](http://img.shields.io/badge/version-0.0.6-brightgreen.svg)](https://github.com/hegdeashwin/Protocore/releases)
+# Protocore [![GitHub version](http://img.shields.io/badge/version-0.0.7-brightgreen.svg)](https://github.com/hegdeashwin/Protocore/releases)
 
 [![Build Status](https://travis-ci.org/hegdeashwin/Protocore.svg?branch=master)](https://travis-ci.org/hegdeashwin/Protocore)   [![Dependency Status](https://gemnasium.com/hegdeashwin/Protocore.svg)](https://gemnasium.com/hegdeashwin/Protocore)  [![Node.js version](http://img.shields.io/badge/Node.js-%3E%200.10-brightgreen.svg)](https://github.com/hegdeashwin/Protocore/)  [![Built with Grunt](http://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)  [![License version](http://img.shields.io/badge/License-MIT-red.svg)](https://github.com/hegdeashwin/Protocore#license)
 
@@ -10,10 +10,8 @@ Protocore is an open source walking application skeleton for a typical unstructu
 As Protocore is based on JavaScript. It is assumed user already knows JavaScript and jQuery.
 
 For understanding Protocore, knowledge of following JavaScript libraries/frameworks are must.
-<ul>
-	<li>Require.js - a JavaScript file and module loader. For more information visit <a href="//requirejs.org/" target="_blank">requirejs.org</a></p></li>
-	<li>Bootstrap Framework 3.0 - a front-end framework for developing responsive, mobile first projects on the web. For more information visit <a href="//getbootstrap.com/" target="_blank">getbootstrap.com</a></li>
-</ul>
+* Require.js - a JavaScript file and module loader. For more information visit <a href="//requirejs.org/" target="_blank">requirejs.org</a></p></li>
+
 
 ## Installation
 
@@ -146,7 +144,8 @@ instruction on how to do this.
 
 ## Author & Contributors
 
-Developed &amp; maintained by author: <b>Ashwin Hegde</b><br>
+Developed &amp; maintained by author: Ashwin Hegde
+
 Follow me at: <a href="https://github.com/hegdeashwin" target="_blank">github</a> | <a href="http://in.linkedin.com/in/hegdeashwin" target="_blank">Linkedin</a> | <a href="https://twitter.com/hegdeashwin3" target="_blank">Twitter</a>
 
 We really appreciate all kind of contributions. Special thanks to <a href="//github.com/hegdeashwin/Protocore/graphs/contributors" target="_blank">contributors</a> for using and supporting Protocore.
