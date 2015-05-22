@@ -19,9 +19,7 @@ requirejs.config({
         'hasher': 'bower_components/hasher/dist/js/hasher.min',
         'crossroads': 'bower_components/crossroads/dist/crossroads.min',
         'text': 'bower_components/requirejs-text/text',
-        'handlebars': 'bower_components/handlebars/handlebars.min',
-        'template': 'systems/utilities/hb-template-mapper',
-        'templates': '../../templates'
+        'handlebars': 'bower_components/handlebars/handlebars.min'
     },
 
     /***
@@ -31,9 +29,6 @@ requirejs.config({
      * See http://requirejs.org/docs/api.html#config-shim for more details.
      */
     shim: {
-        text: {
-            exports: 'text'
-        },
         signals: {
             exports: 'signals'
         },
