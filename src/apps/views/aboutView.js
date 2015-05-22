@@ -1,16 +1,16 @@
 define(function(require) {
-	'use strict';
+    'use strict';
 
-	var AboutTemplate = require('template!templates/aboutTpl'),
-		BaseView = require('apps/views/_baseView');
+    var AboutTemplate = require('text!../templates/aboutTpl.html'),
+        BaseView = require('apps/views/_baseView');
 
-	var AboutView = function() {
+    var AboutView = function() {
 
-		// @params: el (DOM Reference), template
-		BaseView.call(this, 'body', AboutTemplate);
-	};
+        // @params: el (DOM Reference), template
+        BaseView.call(this, 'body', AboutTemplate);
+    };
 
-	AboutView.prototype = new BaseView();
+    AboutView.prototype = new BaseView();
 
-	return AboutView;
+    return AboutView;
 });
