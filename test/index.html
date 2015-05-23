@@ -10,15 +10,15 @@
     <div id="mocha"></div>
     <script src="../node_modules/mocha/mocha.js"></script>
     <script src="../node_modules/chai/chai.js"></script>
+    <script data-main="../src/main" src="../src/bower_components/requirejs/require.js"></script>
     <script>
       mocha.setup({
         ui: "bdd"
       });
+      var runMocha = function() {
+        mocha.run();
+      };
     </script>
-    <script src="apps/views/aboutView.js"></script>
-    <script src="apps/views/homeView.js"></script>
-    <script>
-      mocha.run();
-    </script>
+    <script src="serve-test-files.js"></script>
   </body>
 </html>
