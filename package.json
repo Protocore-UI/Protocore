@@ -1,68 +1,81 @@
 {
-    "name": "Protocore",
-    "version": "0.0.7",
-    "author": "Ashwin Hegde",
-    "description": "Protocore is an open source walking application skeleton for a typical unstructured JavaScript/jQuery web apps. You can use it to quickly bootstrap your unstructured JavaScript/jQuery web application projects.",
-    "contributors": [{
-        "name": "Ashwin Hegde",
-        "email": "github.com/hegdeashwin"
-    }],
-    "repository": {
-        "type": "git",
-        "url": "http://github.com/hegdeashwin/Protocore"
-    },
-    "issues": {
-        "url": "http://github.com/hegdeashwin/Protocore/issues?state=open"
-    },
-    "milestones": {
-        "url": "http://github.com/hegdeashwin/Protocore/issues/milestones"
-    },
-    "releases": {
-        "url": "http://github.com/hegdeashwin/Protocore/releases"
-    },
-    "wiki": {
-        "url": "http://github.com/hegdeashwin/Protocore/wiki"
-    },
-    "dependencies": {
-        "express": "~4.12.0",
-        "static-favicon": "~1.0.0",
-        "morgan": "~1.5.0",
-        "cookie-parser": "~1.3.2",
-        "body-parser": "~1.12.0"
-    },
-    "devDependencies": {
-        "grunt": "~0.4.4",
-        "grunt-cli": "~0.1.13",
-        "grunt-contrib-clean": "~0.6.0",
-        "grunt-contrib-jshint": "~0.11.0",
-        "grunt-jscs": "~1.8.0",
-        "grunt-contrib-csslint": "~0.4.0",
-        "grunt-htmlhint": "~0.4.0",
-        "grunt-contrib-less": "~1.0.0",
-        "grunt-contrib-watch": "~0.6.0",
-        "grunt-strip": "~0.2.1",
-        "grunt-shell": "~1.1.1",
-        "grunt-contrib-htmlmin": "~0.4.0",
-        "grunt-autoprefixer": "~3.0.0",
-        "grunt-contrib-qunit": "~0.7.0",
-        "time-grunt": "~1.2.0",
-        "grunt-jsonlint": "~1.0.4",
-        "grunt-banner": "~0.4.0"
-    },
-    "keywords": [
-        "javascript", "jquery", "framework", "web", "rest", "restful", "node", "express", "architecture"
-    ],
-    "engines": {
-        "node": ">=0.10"
-    },
-    "scripts": {
-        "test": "grunt --verbose"
-    },
-    "main": {
-        "start": "node server.js"
-    },
-    "licenses": [{
-        "type": "MIT",
-        "url": "http://raw.github.com/hegdeashwin/Protocore/master/LICENSE"
-    }]
+  "name": "Protocore",
+  "version": "0.0.7",
+  "author": "Ashwin Hegde",
+  "description": "Protocore is an open source walking application skeleton for a typical unstructured JavaScript/jQuery web apps. You can use it to quickly bootstrap your unstructured JavaScript/jQuery web application projects.",
+  "contributors": [
+    {
+      "name": "Ashwin Hegde",
+      "email": "github.com/hegdeashwin"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/hegdeashwin/Protocore"
+  },
+  "issues": {
+    "url": "http://github.com/hegdeashwin/Protocore/issues?state=open"
+  },
+  "milestones": {
+    "url": "http://github.com/hegdeashwin/Protocore/issues/milestones"
+  },
+  "releases": {
+    "url": "http://github.com/hegdeashwin/Protocore/releases"
+  },
+  "wiki": {
+    "url": "http://github.com/hegdeashwin/Protocore/wiki"
+  },
+  "dependencies": {
+    "express": "~4.12.0",
+    "static-favicon": "~1.0.0",
+    "morgan": "~1.5.0",
+    "cookie-parser": "~1.3.2",
+    "body-parser": "~1.12.0"
+  },
+  "devDependencies": {
+    "chai": "^2.3.0",
+    "grunt": "~0.4.4",
+    "grunt-autoprefixer": "~3.0.0",
+    "grunt-banner": "~0.4.0",
+    "grunt-cli": "~0.1.13",
+    "grunt-contrib-clean": "~0.6.0",
+    "grunt-contrib-csslint": "~0.4.0",
+    "grunt-contrib-htmlmin": "~0.4.0",
+    "grunt-contrib-jshint": "~0.11.0",
+    "grunt-contrib-less": "~1.0.0",
+    "grunt-contrib-watch": "~0.6.0",
+    "grunt-htmlhint": "~0.4.0",
+    "grunt-jscs": "~1.8.0",
+    "grunt-jsonlint": "~1.0.4",
+    "grunt-shell": "~1.1.1",
+    "grunt-strip": "~0.2.1",
+    "mocha": "^2.2.5",
+    "time-grunt": "~1.2.0"
+  },
+  "keywords": [
+    "javascript",
+    "jquery",
+    "framework",
+    "web",
+    "rest",
+    "restful",
+    "node",
+    "express",
+    "architecture"
+  ],
+  "engines": {
+    "node": ">=0.10"
+  },
+  "scripts": {
+    "test": "node_modules/.bin/mocha"
+  },
+  "main": {
+    "start": "node server.js"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://raw.github.com/hegdeashwin/Protocore/master/LICENSE"
+    }
+  ]
 }
