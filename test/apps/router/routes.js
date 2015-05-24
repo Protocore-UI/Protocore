@@ -1,43 +1,50 @@
-'use strict';
+define(function(require) {
 
-describe('Routes Test', function() {
+    'use strict';
 
-    // var chai = require('chai');
-    var expect = chai.expect;
+    describe('Routes Test', function() {
 
-    /**
-     * Runs before all tests in this block.
-     */
-    before(function() {
-        console.log("Runs before all tests in this block");
-    });
+        // var chai = require('chai');
+        var expect = chai.expect;
 
-    /**
-     * Runs before all tests in this block.
-     */
-    after(function() {
-        // runs after all tests in this block
-        console.log("Runs after all tests in this block");
-    });
+        // var Router = require('../../../src/apps/router/routes');
+        // var router = new Router();
 
-    /**
-     * Runs before each test in this block.
-     */
-    beforeEach(function() {
-        console.log("Runs before each test in this block");
-    });
+        /**
+         * Runs before all tests in this block.
+         */
+        before(function() {
+            console.log("Runs before all tests in this block");
+        });
 
-    /**
-     * Runs before each tests in this block.
-     */
-    afterEach(function() {
-        console.log("Runs after each test in this block");
-    });
+        /**
+         * Runs before all tests in this block.
+         */
+        after(function() {
+            // runs after all tests in this block
+            console.log("Runs after all tests in this block");
+        });
 
-    
-    describe("Equal", function() {
-        it("Should be equal", function() {
-            expect("string").to.be.a('string');
+        /**
+         * Runs before each test in this block.
+         */
+        beforeEach(function() {
+            console.log("Runs before each test in this block");
+        });
+
+        /**
+         * Runs before each tests in this block.
+         */
+        afterEach(function() {
+            console.log("Runs after each test in this block");
+        });
+
+
+        describe("Equal", function() {
+            it("Should be equal", function() {
+                expect("string").to.be.a('string');
+            });
         });
     });
-})
+
+});

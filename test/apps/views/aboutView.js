@@ -1,43 +1,43 @@
-'use strict';
+define(function(require) {
 
-describe('About View Test', function() {
+    'use strict';
 
-    // var chai = require('chai');
-    var expect = chai.expect;
+    describe('About View Test', function() {
 
-    /**
-     * Runs before all tests in this block.
-     */
-    before(function() {
-        console.log("Runs before all tests in this block");
-    });
+        // var chai = require('chai');
+        var expect = chai.expect;
+        var AboutView = require('../../../src/apps/views/aboutView');
 
-    /**
-     * Runs before all tests in this block.
-     */
-    after(function() {
-        // runs after all tests in this block
-        console.log("Runs after all tests in this block");
-    });
-
-    /**
-     * Runs before each test in this block.
-     */
-    beforeEach(function() {
-        console.log("Runs before each test in this block");
-    });
-
-    /**
-     * Runs before each tests in this block.
-     */
-    afterEach(function() {
-        console.log("Runs after each test in this block");
-    });
-
-    
-    describe("Equal", function() {
-        it("Should be equal", function() {
-            expect("string").to.be.a('string');
+        /**
+         * Runs before all tests in this block.
+         */
+        before(function() {
+            this.aboutView = new AboutView();
         });
-    });
-})
+
+        /**
+         * Runs before all tests in this block.
+         */
+        after(function() {
+        });
+
+        /**
+         * Runs before each test in this block.
+         */
+        beforeEach(function() {
+        });
+
+        /**
+         * Runs before each tests in this block.
+         */
+        afterEach(function() {
+        });
+
+
+        describe("Check instances and functions", function() {
+            it("An instance of home view", function() {
+                expect(this.aboutView).to.be.a.instanceof(AboutView);
+            });
+        });
+    })
+});
