@@ -2,23 +2,11 @@
 <html>
   <head>
     <title>Protocore: Tests</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../node_modules/mocha/mocha.css" />
   </head>
   <body>
     <div id="mocha"></div>
-    <script src="../node_modules/mocha/mocha.js"></script>
-    <script src="../node_modules/chai/chai.js"></script>
+
     <script data-main="main" src="../src/bower_components/requirejs/require.js"></script>
-    <script>
-      mocha.setup({
-        ui: "bdd"
-      });
-      var runMocha = function() {
-        mocha.run();
-      };
-    </script>
-    <script src="serve-test-files.js"></script>
   </body>
 </html>

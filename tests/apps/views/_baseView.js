@@ -4,7 +4,7 @@ define(function() {
 
     var expect = {};
 
-    describe('Routes Test', function() {
+    describe('Baseview Test', function() {
         
         before(function() {
             expect = chai.expect;
