@@ -67,7 +67,7 @@
     "node": ">=0.10"
   },
   "scripts": {
-    "test": "node_modules/.bin/mocha"
+    "test": "node_modules/.bin/mocha tests/apps"
   },
   "main": {
     "start": "node server.js"

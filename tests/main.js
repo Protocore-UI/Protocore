@@ -7,7 +7,13 @@ requirejs.config({
         "configDir": "../tests/configs",
         "configFile": "../tests/configs/config",
         "testsDir": "../tests/apps",
-        "src": "../src/apps"
+        "src": "../src/apps",
+        'jquery': '../src/bower_components/jquery/jquery.min',
+        'handlebars': '../src/bower_components/handlebars/handlebars.min',
+        'signals': 'bower_components/js-signals/dist/signals.min',
+        'hasher': 'bower_components/hasher/dist/js/hasher.min',
+        'crossroads': 'bower_components/crossroads/dist/crossroads.min',
+        'text': 'bower_components/requirejs-text/text'
     },
 
     shim: {
@@ -16,6 +22,17 @@ requirejs.config({
         },
         "chai": {
             exports: "chai"
+        },
+        "signals": {
+            exports: 'signals'
+        },
+        "hasher": {
+            deps: ['signals'],
+            exports: 'hasher'
+        },
+        "crossroads": {
+            deps: ['signals', 'hasher'],
+            exports: 'crossroads'
         }
     }
 });
