@@ -1,8 +1,5 @@
-define(function(require) {
+define(['jquery', 'handlebars'], function($, Handlebars) {
     'use strict';
-
-    var $ = require('jquery');
-    var Handlebars = require('handlebars');
 
     var BaseView = function(el, template) {
         this.el = el || 'body';
