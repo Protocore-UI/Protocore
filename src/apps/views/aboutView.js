@@ -12,5 +12,17 @@ define(function(require) {
 
     AboutView.prototype = new BaseView();
 
+    AboutView.prototype.beforeRender = function() {
+        console.log("LOG: AboutView Before Render");
+    };
+
+    AboutView.prototype.afterRender = function() {
+        console.log("LOG: AboutView After Render");
+    };
+
+    AboutView.prototype.eventsHash = function() {
+        console.log("LOG: AboutView Events Hash");
+    };
+    
     return AboutView;
 });
