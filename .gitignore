@@ -25,3 +25,5 @@ prod
 src/bower_components
 prod/bower_components
 prod/build.txt
+
+reports
