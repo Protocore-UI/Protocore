@@ -14,7 +14,7 @@ module.exports = function(grunt) {
         buildTags: "/* Project Name : <%= pkg.application.name %> Release version : <%= pkg.application.version %> */",
 
         configuredFiles: grunt.file.readJSON('config/servefiles.json'),
-        
+
         clean: {
             build: ['prod']
         },
@@ -108,18 +108,6 @@ module.exports = function(grunt) {
                 tasks: ['less:customMade']
             }
         },
-        qunit: {
-            options: {
-                '--web-security': 'no',
-                coverage: {
-                    src: ['src/**/*.js'],
-                    instrumentedFiles: 'temp/',
-                    htmlReport: 'report/coverage',
-                    coberturaReport: 'report/'
-                }
-            },
-            all: ['tests/**/*.html']
-        },
         strip: {
             main: {
                 src: 'prod/src/apps/**/*.js',
@@ -148,6 +136,13 @@ module.exports = function(grunt) {
                 },
                 files: '<%= configuredFiles.htmlmin.files %>'
             }
+        },
+        plato: {
+            report: {
+                files: {
+                    'reports': ['src/apps/**/*.js', 'tests/**/*.js']
+                }
+            }
         }
     });
 
@@ -165,9 +160,9 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-htmlhint');
     grunt.loadNpmTasks('grunt-contrib-htmlmin');
     grunt.loadNpmTasks('grunt-autoprefixer');
-    grunt.loadNpmTasks('grunt-contrib-qunit');
     grunt.loadNpmTasks('grunt-jsonlint');
     grunt.loadNpmTasks('grunt-banner');
+    grunt.loadNpmTasks('grunt-plato');
 
     /**
      * Define tasks : Tasks for development eco - system.
@@ -179,7 +174,8 @@ module.exports = function(grunt) {
         'jshint',
         'compileLessDev',
         'autofix',
-        'csslint'
+        'csslint',
+        'plato'
     ]);
     grunt.registerTask('dev', ['default']); // Alias for `default`.
 
@@ -194,6 +190,7 @@ module.exports = function(grunt) {
         'compileLessProd',
         'autofix',
         'csslint',
+        'plato',
         'clean',
         'strip',
         'shell',
@@ -205,7 +202,7 @@ module.exports = function(grunt) {
      * Define tasks : Tasks for less:compilation watch, Also alias for `watch`
      */
     grunt.registerTask('watchless', ['watch:less']);
-    
+
     /**
      * Define sub-tasks : Tasks for Less compilation for development.
      */
@@ -222,8 +219,7 @@ module.exports = function(grunt) {
     grunt.registerTask('autofix', ['autoprefixer']);
 
     /**
-     * Define sub-tasks : Alias for `tests`
+     * Define sub-tasks : Alias for `plato`
      */
-    grunt.registerTask('tests', ['qunit']);
-
+    grunt.registerTask('analysis', ['plato']);
 };
