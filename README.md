@@ -12,7 +12,6 @@ As Protocore is based on JavaScript. It is assumed user already knows JavaScript
 For understanding Protocore, knowledge of following JavaScript libraries/frameworks are must.
 * Require.js - a JavaScript file and module loader. For more information visit <a href="//requirejs.org/" target="_blank">requirejs.org</a></p></li>
 
-
 ## Installation
 
 Assuming that Git is already installed & running:
@@ -36,7 +35,7 @@ bower install
 
 Generate CSS files from LESS: (First command after installing dependencies)
 ```
-grunt compileless
+grunt compileLessDev
 ```
 
 To start the development server:
@@ -72,28 +71,42 @@ The server side codebase resides in the ```server.js``` and ```config.js``` file
 The client side codebase resides in the ```src``` folder. This folder contains following subfolders.
 
 ```
-+-- /stylesheets
-	+--/css
-	+--/less
-		+--/common
-		+--/base
-		+--/layout
-		+--/modules
-		+--/state
-		+--/theme
-+-- /systems
-	+--/frameworks
-	+--/libs
-	+--/utilities
-+-- /templates
-+-- /assets
-	+--/fonts
-	+--/images
-+-- /apps
-	+--/models
-	+--/views
-	+--/router
+/src
+	+-- /stylesheets
+		+--/css
+		+--/less
+			+--/common
+			+--/base
+			+--/layout
+			+--/modules
+			+--/state
+			+--/theme
+	+-- /assets
+		+--/fonts
+		+--/images
+	+-- /apps
+		+--/controller
+		+--/models
+		+--/views
+		+--/router
+		+--/templates
+	+-- /bower_components [Created by ```bower install``` command]
 ```
+
+## Test layer
+
+The test side codebase resides in the ```tests``` folder. This folder contains following subfolders.
+
+```
+/tests
+	+-- /configs
+	+-- /apps
+		+--/controller
+		+--/models
+		+--/views
+		+--/router
+```
+
 
 ## Stylesheet layer
 
@@ -107,27 +120,36 @@ Few task automations has been configured to detect errors and potential problems
 
 Following are the default Grunt plugins that has been integrated with Protocore codebase.
 
-**Individual tasks**
+**Automations tasks & commands**
 
-| Grunt Plugin 			 | Command                  | Task Performed              |
-|:-----------------------|:------------------------|:---------------------------|
-| grunt-htmlhint		 | grunt htmllint           | Detect errors and issues for HTML documents for index.html and templates. |
-| grunt-contrib-csslint	 | grunt csslint            | Detect errors and issues for CSS stylesheets. |
-| grunt-contrib-jshint	 | grunt jshint             | Detect errors and issues for JavaScript. |
-| grunt-jscs-checker	 | grunt jscs               | Detect unwanted spacing etc. for JavaScript. |
-| grunt-contrib-less	 | grunt less:readyMade     | Compile all the less files. The files which comes with third party libraries or frameworks like Bootstrap 3.0 |
-| grunt-contrib-less     | grunt less:customMade    | Compile all the less files. The files which created by users as their custom stylesheets.
-| grunt-contrib-watch	 | grunt watch 				| Keep watch on less folders & files. Any changes in less file will automatically compile all the less files. |
-| grunt-contrib-qunit	 | grunt qunit 				| Perform unit testing. |
+| Linting commands |
+|:---|
+|Markdown : ```grunt mdlint``` |
+|HTML/Templates : ```grunt htmlhint```|
+|JavaScript : ```grunt jshint``` AND ```grunt jscs```|
+|JSON : ```grunt jsonlint```|
+|CSS : ```grunt csslint```|
 
-**Combine tasks**
+| Build commands |
+|:---|
+|Production : ```grunt build```|
 
-| Command                     | Task performed              |
-|:--------------------------- |:---------------------------|
-| grunt default               | Executing this command will perform the task to detect errors and issues for HTML, CSS, JavaScript and less compilation to CSS. It includes jshint, jscs, htmlhint, csslint, less:readyMade, less:customMade. |
-| grunt build              	  | Executing this command will perform the ```default``` task including clear and building production build. |
-| grunt compileless           | Executing this command will perform only less compilation to CSS which includes two sub-task ```less:readyMade```, ```less:customMade```. |
-| grunt tests		          | Executing this command will perform unit testing. |
+| Compilation commands |
+|:---|
+|LESS for development : ```grunt compileLessDev```|
+|LESS for production : ```grunt compileLessProd```|
+
+| Watch commands |
+|:---|
+|LESS Compilation for development : ```grunt watchless```|
+
+| Unit test commands |
+|:---|
+|Browser: ```http://localhost:8080/tests/``` install http-server npm|
+
+|Report generator commands|
+|:---|
+|Plato : ```grunt analysis``` OR ```grunt plato```|
 
 
 ## Continuous Integration
@@ -144,9 +166,7 @@ instruction on how to do this.
 
 ## Author & Contributors
 
-Developed &amp; maintained by author: Ashwin Hegde
-
-Follow me at: <a href="https://github.com/hegdeashwin" target="_blank">github</a> | <a href="http://in.linkedin.com/in/hegdeashwin" target="_blank">Linkedin</a> | <a href="https://twitter.com/hegdeashwin3" target="_blank">Twitter</a>
+Developed &amp; maintained by author: Ashwin Hegde and contributions.
 
 We really appreciate all kind of contributions. Special thanks to <a href="//github.com/hegdeashwin/Protocore/graphs/contributors" target="_blank">contributors</a> for using and supporting Protocore.
 
