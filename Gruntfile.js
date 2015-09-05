@@ -143,7 +143,8 @@ module.exports = function(grunt) {
                     'reports': ['src/apps/**/*.js', 'tests/**/*.js']
                 }
             }
-        }
+        },
+        mdlint: ['*.md']
     });
 
     /**
@@ -163,11 +164,13 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-jsonlint');
     grunt.loadNpmTasks('grunt-banner');
     grunt.loadNpmTasks('grunt-plato');
+    grunt.loadNpmTasks('grunt-mdlint');
 
     /**
      * Define tasks : Tasks for development eco - system.
      */
     grunt.registerTask('default', [
+        'mdlint',
         'htmlhint',
         'jsonlint',
         'jscs',
@@ -183,6 +186,7 @@ module.exports = function(grunt) {
      * Define tasks : Tasks for build eco - system.
      */
     grunt.registerTask('build', [
+        'mdlint',
         'htmlhint',
         'jsonlint',
         'jscs',
