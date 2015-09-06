@@ -56,7 +56,9 @@ To start the production server:
 NODE_ENV=production node server.js
 ```
 
-## Protocore Generator
+## Protocore Experiments
+
+[protocore-es6-edition](https://github.com/hegdeashwin/protocore-es6-edition) is a special ECMAScript 6 implementation edition of Protocore project.
 
 [generator-protocore](https://github.com/hegdeashwin/generator-protocore) is a Yeoman generator for Protocore. The tool will help to generate walking application skeleton for a typical unstructured JavaScript/jQuery web apps.
 
