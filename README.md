@@ -5,6 +5,11 @@
 
 Protocore is an open source walking application skeleton for a typical unstructured JavaScript/jQuery web apps. You can use it to quickly bootstrap your unstructured JavaScript/jQuery web application projects.
 
+## Supports
+* Node.js v0.10.x or above
+* Node.js v4.0 new release
+* iojs 2.3.x or above
+
 ## Prerequisites
 
 As Protocore is based on JavaScript. It is assumed user already knows JavaScript and jQuery.
@@ -19,7 +24,7 @@ Assuming that Git is already installed & running:
 git clone https://github.com/hegdeashwin/Protocore
 ```
 
-Assuming that Node.js & Bower is already installed & running, 
+Assuming that Node.js or io.js & Bower is already installed & running,
 
 Install dependencies:
 ```
@@ -41,6 +46,11 @@ grunt compileLessDev
 To start the development server:
 ```
 node server.js
+
+OR
+
+iojs server.js
+
 ```
 or
 ```
