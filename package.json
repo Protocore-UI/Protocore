@@ -35,7 +35,6 @@
   "devDependencies": {
     "chai": "^3.0.0",
     "grunt": "~0.4.4",
-    "grunt-autoprefixer": "~3.0.0",
     "grunt-banner": "~0.4.0",
     "grunt-cli": "~0.1.13",
     "grunt-contrib-clean": "~0.6.0",
@@ -44,15 +43,14 @@
     "grunt-contrib-jshint": "~0.11.0",
     "grunt-contrib-less": "~1.0.0",
     "grunt-contrib-watch": "~0.6.0",
+    "grunt-githooks": "^0.3.1",
     "grunt-htmlhint": "~0.4.0",
     "grunt-jscs": "~1.8.0",
     "grunt-jsonlint": "~1.0.4",
-    "grunt-mdlint": "0.0.1",
     "grunt-plato": "^1.2.1",
     "grunt-shell": "~1.1.1",
     "grunt-strip": "~0.2.1",
-    "mocha": "^2.2.5",
-    "time-grunt": "~1.2.0"
+    "mocha": "^2.2.5"
   },
   "keywords": [
     "javascript",
