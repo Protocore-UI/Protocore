@@ -61,7 +61,8 @@
     "architecture"
   ],
   "engines": {
-    "node": ">=0.10"
+    "node": ">=0.10",
+    "iojs": ">=2.3"
   },
   "main": {
     "start": "node server.js"
