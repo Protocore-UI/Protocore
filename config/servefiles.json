@@ -1,54 +1,114 @@
 {
-	"usebanner": ["prod/apps/**/*.js"],
-	"jshint": {
-		"files": [
-			"src/apps/**/*.js"
-		],
-		"ignore": [
-			"src/main.js",
-			"src/systems/libs/**/*.js",
-			"src/systems/frameworks/**/*.js"
-		]
-	},
-	"jscs": {
-		"files": [
-			"src/apps/**/*.js"
-		]
-	},
-	"jsonlint": [
-		"package.json",
-		"config/banner.json",
-		"config/lints/.jscsrc",
-		"config/lints/.jshintrc",
-		"config/lints/.csslintrc",
-		"config/lints/.htmlhint-n-rc",
-		"config/lints/.htmlhint-t-rc"
-	],
-	"csslint": {
-		"files": [
-			"src/stylesheets/css/**/*.css"
-		],
-		"ignore": [
-			"src/systems/libs/**/*.css",
-			"src/systems/frameworks/**/*.css"
-		]
-	},
-	"htmlhint": {
-		"Root_HTML_Files": {
-			"files": [
-				"src/*.html"
-			],
-			"ignore": []
+	"build": {
+		"clean": {
+			"files": "prod"
 		},
-		"Templates": {
-			"files": [
-				"src/templates/**/*.html"
-			],
-			"ignore": []
+		"strip": {
+			"files": "prod/src/apps/**/*.js",
+			"options": {
+				"inline": true,
+				"nodes": ["console.log", "debug"]
+			}
+		},
+		"banner": {
+			"files": ["prod/apps/**/*.js"],
+			"options": {
+				"position": "top",
+				"banner": "<%= buildTags %>",
+				"linebreak": true
+			}
+		},
+		"minify": {
+			"html": {
+				"files": {
+					"prod/index.html": "prod/index.html"
+				},
+				"options": {
+					"removeComments": true,
+					"collapseWhitespace": true
+				}
+			}
 		}
 	},
-	"less": {
-		"customMade": {
+	"lint": {
+		"js": {
+			"files": [
+				"src/apps/**/*.js"
+			],
+			"options": {
+				"jshintrc": "config/lints/.jshintrc",
+				"ignore": [
+					"src/main.js",
+					"src/systems/libs/**/*.js",
+					"src/systems/frameworks/**/*.js"
+				]
+			}
+		},
+		"jscs": {
+			"files": [
+				"src/apps/**/*.js"
+			],
+			"options": {
+				"config": "./config/lints/.jscsrc"
+			}
+		},
+		"json": {
+			"files": {
+				"src": [
+					"package.json",
+					"./config/banner.json",
+					"./config/lints/.jscsrc",
+					"./config/lints/.jshintrc",
+					"./config/lints/.csslintrc",
+					"./config/lints/.htmlhint-n-rc",
+					"./config/lints/.htmlhint-t-rc"
+				]
+			}
+		},
+		"css": {
+			"files": [
+				"src/stylesheets/css/**/*.css"
+			],
+			"options": {
+				"csslintrc": "./config/lints/.csslintrc",
+				"ignores": [
+					"src/systems/libs/**/*.css",
+					"src/systems/frameworks/**/*.css"
+				]
+			}
+		},
+		"html": {
+			"root": {
+				"files": [
+					"src/*.html"
+				],
+				"options": {
+					"htmlhintrc": "./config/lints/.htmlhint-n-rc",
+					"ignores": []
+				}
+			},
+			"template": {
+				"files": [
+					"src/apps/templates/**/*.html"
+				],
+				"options": {
+					"htmlhintrc": "./config/lints/.htmlhint-t-rc",
+					"ignores": []
+				}
+			}
+		},
+		"markdown": {
+			"files": ["*.md"]
+		},
+		"reports": {
+			"files": ["src/apps/**/*.js", "tests/**/*.js"]
+		}
+	},
+	"compile": {
+		"less": {
+			"options": {
+				"compress": false
+			},
 			"files": {
 				"src/stylesheets/css/consolidate.css": "src/stylesheets/less/_consolidate.less"
 			}
@@ -58,12 +118,10 @@
 		"less": {
 			"files": [
 				"src/stylesheets/less/**/*.less"
-			]
-		}
-	},
-	"htmlmin": {
-		"files": {
-			"prod/index.html": "prod/index.html"
+			],
+			"options": {
+				"spawn": false
+			}
 		}
 	}
 }
