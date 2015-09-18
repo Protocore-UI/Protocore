@@ -13,8 +13,7 @@
 		"requirejs-text": "2.0.10",
 		"handlebars": "3.0.3",
 		"requirejs": "https://github.com/jrburke/requirejs.git#2.1.17",
-		"rjs": "https://github.com/jrburke/r.js.git#2.1.17",
-		"qunit": "1.11.0"
+		"rjs": "https://github.com/jrburke/r.js.git#2.1.17"		
 	},
 	"license": "MIT",
 	"ignore": [
