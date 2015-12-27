@@ -15,7 +15,7 @@ Protocore is an open source walking application skeleton for a typical unstructu
 As Protocore is based on JavaScript. It is assumed user already knows JavaScript and jQuery.
 
 For understanding Protocore, knowledge of following JavaScript libraries/frameworks are must.
-* Require.js - a JavaScript file and module loader. For more information visit <a href="//requirejs.org/" target="_blank">requirejs.org</a></p></li>
+* Require.js - a JavaScript file and module loader.
 
 ## Installation
 
@@ -31,7 +31,7 @@ Install dependencies:
 npm install
 ```
 
-Assuming that Bower is already installed & running, 
+Assuming that Bower is already installed & running,
 
 Install client-side dependencies:
 ```
@@ -69,6 +69,8 @@ NODE_ENV=production node server.js
 ## Protocore Experiments
 
 [protocore-es6-edition](https://github.com/hegdeashwin/protocore-es6-edition) is a special ECMAScript 6 implementation edition of Protocore project.
+
+[protocore-webpack-edition](https://github.com/hegdeashwin/protocore-webpack-edition) is a special Webpack implementation edition of Protocore project.
 
 [generator-protocore](https://github.com/hegdeashwin/generator-protocore) is a Yeoman generator for Protocore. The tool will help to generate walking application skeleton for a typical unstructured JavaScript/jQuery web apps.
 
@@ -128,7 +130,7 @@ The codebase comes with LESS setup with a ```Scalable and Modular Architecture f
 
 Protocore comes with Grunt ecosystem - a JavaScript task runner to perform repetitive tasks like minification, compilation, unit testing, linting etc. Many of the tasks you need are already available as published Grunt plugins.
 
-Few task automations has been configured to detect errors and potential problems in codebase and to enforce your team's coding conventions. 
+Few task automations has been configured to detect errors and potential problems in codebase and to enforce your team's coding conventions.
 
 Following are the default Grunt plugins that has been integrated with Protocore codebase.
 
@@ -169,8 +171,8 @@ Following are the default Grunt plugins that has been integrated with Protocore 
 ### Travis CI
 
 [Travis CI](https://travis-ci.org/hegdeashwin/Protocore/) is a continuous integration service, which can monitor GitHub for new commits
-to your repository and execute scripts such as building the app or running tests. The Protocore 
-contains a Travis configuration file, `.travis.yml`, which will cause Travis to run your tests 
+to your repository and execute scripts such as building the app or running tests. The Protocore
+contains a Travis configuration file, `.travis.yml`, which will cause Travis to run your tests
 when you push to GitHub.
 
 You will need to enable the integration between Travis and GitHub. See the Travis website for more
