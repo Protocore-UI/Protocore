@@ -21,7 +21,7 @@ For understanding Protocore, knowledge of following JavaScript libraries/framewo
 
 Assuming that Git is already installed & running:
 ```
-git clone https://github.com/hegdeashwin/Protocore
+git clone https://github.com/Protocore-UI/Protocore
 ```
 
 Assuming that Node.js or io.js & Bower is already installed & running,
@@ -68,13 +68,13 @@ NODE_ENV=production node server.js
 
 ## Protocore Experiments
 
-[protocore-es6-edition](https://github.com/hegdeashwin/protocore-es6-edition) is a special ECMAScript 6 implementation edition of Protocore project.
+[protocore-es6-edition](https://github.com/Protocore-UI/protocore-es6-edition) is a special ECMAScript 6 implementation edition of Protocore project.
 
-[protocore-webpack-edition](https://github.com/hegdeashwin/protocore-webpack-edition) is a special Webpack implementation edition of Protocore project.
+[protocore-webpack-edition](https://github.com/Protocore-UI/protocore-webpack-edition) is a special Webpack implementation edition of Protocore project.
 
-[generator-protocore](https://github.com/hegdeashwin/generator-protocore) is a Yeoman generator for Protocore. The tool will help to generate walking application skeleton for a typical unstructured JavaScript/jQuery web apps.
+[generator-protocore](https://github.com/Protocore-UI/generator-protocore) is a Yeoman generator for Protocore. The tool will help to generate walking application skeleton for a typical unstructured JavaScript/jQuery web apps.
 
-[Protocore-cli](https://github.com/hegdeashwin/protocore-cli) is a command line generator for Protocore. This tool will help to generate a walking application skeleton for a typical unstructured JavaScript/jQuery web apps.
+[Protocore-cli](https://github.com/Protocore-UI/protocore-cli) is a command line generator for Protocore. This tool will help to generate a walking application skeleton for a typical unstructured JavaScript/jQuery web apps.
 
 ## Server layer
 
@@ -182,10 +182,10 @@ instruction on how to do this.
 
 Developed &amp; maintained by author: Ashwin Hegde and contributions.
 
-We really appreciate all kind of contributions. Special thanks to <a href="//github.com/hegdeashwin/Protocore/graphs/contributors" target="_blank">contributors</a> for using and supporting Protocore.
+We really appreciate all kind of contributions. Special thanks to [contributors](//github.com/Protocore-UI/Protocore/graphs/contributors) for using and supporting Protocore.
 
 To request a feature or you find any typo errors, enhancements or questions; please feel free to post it on following link, or vote for the ones that are already registered.
-<br>Tracking: <a href="https://github.com/hegdeashwin/Protocore/issues" target="_blank">https://github.com/hegdeashwin/Protocore/issues</a>
+[https://github.com/Protocore-UI/Protocore/issues](https://github.com/Protocore-UI/Protocore/issues)
 
 ## License
 
