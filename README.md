@@ -1,14 +1,12 @@
-# Protocore [![GitHub version](http://img.shields.io/badge/version-0.0.7-brightgreen.svg)](https://github.com/hegdeashwin/Protocore/releases)
+# Protocore [![GitHub version](http://img.shields.io/badge/version-0.0.8-brightgreen.svg)](https://github.com/hegdeashwin/Protocore/releases)
 
-[![Build Status](https://travis-ci.org/hegdeashwin/Protocore.svg?branch=master)](https://travis-ci.org/hegdeashwin/Protocore)   [![Dependency Status](https://gemnasium.com/hegdeashwin/Protocore.svg)](https://gemnasium.com/hegdeashwin/Protocore)  [![Node.js version](http://img.shields.io/badge/Node.js-%3E%200.10-brightgreen.svg)](https://github.com/hegdeashwin/Protocore/) [![io.js version](http://img.shields.io/badge/io.js-%3E%202.3-brightgreen.svg)](https://github.com/hegdeashwin/Protocore/) [![Built with Grunt](http://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)  [![License version](http://img.shields.io/badge/License-MIT-red.svg)](https://github.com/hegdeashwin/Protocore#license)
+[![Build Status](https://travis-ci.org/hegdeashwin/Protocore.svg?branch=master)](https://travis-ci.org/hegdeashwin/Protocore)   [![Dependency Status](https://gemnasium.com/hegdeashwin/Protocore.svg)](https://gemnasium.com/hegdeashwin/Protocore)  [![Node.js version](http://img.shields.io/badge/Node.js-%3E%200.12-brightgreen.svg)](https://github.com/hegdeashwin/Protocore/) [![Built with Grunt](http://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)  [![License version](http://img.shields.io/badge/License-MIT-red.svg)](https://github.com/hegdeashwin/Protocore#license)
 
 
 Protocore is an open source walking application skeleton for a typical unstructured JavaScript/jQuery web apps. You can use it to quickly bootstrap your unstructured JavaScript/jQuery web application projects.
 
 ## Supports
-* Node.js v0.10.x or above
-* Node.js v4.0 new release
-* iojs 2.3.x or above
+* Node.js v0.12.x or above
 
 ## Prerequisites
 
@@ -24,7 +22,7 @@ Assuming that Git is already installed & running:
 git clone https://github.com/Protocore-UI/Protocore
 ```
 
-Assuming that Node.js or io.js & Bower is already installed & running,
+Assuming that Node.js & Bower is already installed & running,
 
 Install dependencies:
 ```
