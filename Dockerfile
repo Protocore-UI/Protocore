@@ -7,15 +7,15 @@ RUN apt-get update
 RUN apt-get install -y nodejs npm
 
 # Create app directory
-RUN mkdir -p /usr/src/app
-WORKDIR /usr/src/app
+RUN mkdir -p /usr/protocore
+WORKDIR /usr/protocore
 
 # install app dependencies
-COPY package.json /usr/src/app
+COPY package.json /usr/protocore
 RUN npm install --production
 
 # Bundle app source
-COPY . /usr/src/app
+COPY . /usr/protocore
 
 # Your app binds to port 8000 so you'll use the EXPOSE instruction
 # to have it mapped by the docker daemon
