@@ -1,6 +1,6 @@
 {
   "name": "protocore",
-  "version": "0.0.9",
+  "version": "0.1.0",
   "author": "Ashwin Hegde",
   "description": "Protocore is an open source walking application skeleton for a typical unstructured JavaScript/jQuery web apps. You can use it to quickly bootstrap your unstructured JavaScript/jQuery web application projects.",
   "contributors": [
@@ -29,8 +29,7 @@
     "dev": "NODE_ENV=development node server.js",
     "start": "NODE_ENV=production node server.js",
     "docker": "NODE_ENV=production nodejs server.js",
-    "build": "grunt build",
-    "postinstall": "npm install && bower install"
+    "build": "grunt build"
   },
   "dependencies": {
     "express": "~4.14.0",
