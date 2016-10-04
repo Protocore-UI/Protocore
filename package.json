@@ -62,8 +62,9 @@
   "engines": {
     "node": ">=0.12"
   },
-  "main": {
-    "start": "nodejs server.js"
+  "scripts": {
+    "start": "node server.js",
+    "docker": "nodejs server.js"
   },
   "licenses": [
     {
