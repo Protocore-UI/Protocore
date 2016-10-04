@@ -62,7 +62,7 @@
   "engines": {
     "node": ">=0.12"
   },
-  "main": {
+  "scripts": {
     "start": "node server.js",
     "docker": "nodejs server.js"
   },
