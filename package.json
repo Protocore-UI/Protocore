@@ -1,6 +1,6 @@
 {
-  "name": "Protocore",
-  "version": "0.0.8",
+  "name": "protocore",
+  "version": "0.0.9",
   "author": "Ashwin Hegde",
   "description": "Protocore is an open source walking application skeleton for a typical unstructured JavaScript/jQuery web apps. You can use it to quickly bootstrap your unstructured JavaScript/jQuery web application projects.",
   "contributors": [
@@ -24,6 +24,13 @@
   },
   "wiki": {
     "url": "http://github.com/Protocore-UI/Protocore/wiki"
+  },
+  "scripts": {
+    "dev": "NODE_ENV=development node server.js",
+    "start": "NODE_ENV=production node server.js",
+    "docker": "NODE_ENV=production nodejs server.js",
+    "build": "grunt build",
+    "postinstall": "npm install && bower install"
   },
   "dependencies": {
     "express": "~4.13.0",
@@ -49,22 +56,16 @@
     "mocha": "^2.2.5"
   },
   "keywords": [
-    "javascript",
-    "jquery",
-    "framework",
-    "web",
-    "rest",
-    "restful",
-    "node",
-    "express",
-    "architecture"
+    "skeleton",
+    "scaffolding",
+    "boilerplate",
+    "protocore",
+    "jquery-scaffolding",
+    "jquery-skeleton",
+    "jquery-boilerplate"
   ],
   "engines": {
-    "node": ">=0.12"
-  },
-  "scripts": {
-    "start": "node server.js",
-    "docker": "nodejs server.js"
+    "node": ">=6.0.0"
   },
   "licenses": [
     {
