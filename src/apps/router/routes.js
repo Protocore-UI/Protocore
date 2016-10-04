@@ -1,9 +1,9 @@
 define(["signals", "hasher", "crossroads"], function(signals, hasher, crossroads) {
 
 	'use strict';
-	
+
 	var router = crossroads.create();
-	
+
 	var parseHash = function(newHash){
 		router.parse(newHash);
 	};
