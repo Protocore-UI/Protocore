@@ -15,11 +15,16 @@ RUN apt-get install -y nodejs npm
 RUN mkdir -p /usr/protocore
 WORKDIR /usr/protocore
 
+# Install dependencies at global level
+RUN npm install -g grunt-cli
+RUN npm install -g bower
+
 # Install app dependencies
 COPY package.json /usr/protocore
 RUN npm install
-RUN npm install -g grunt-cli
+RUN bower install
 
+# Run source build
 RUN grunt build
 
 # Bundle app source

@@ -1,4 +1,4 @@
-# Protocore [![GitHub version](http://img.shields.io/badge/version-0.0.8-brightgreen.svg)](https://github.com/hegdeashwin/Protocore/releases)
+# Protocore [![GitHub version](http://img.shields.io/badge/version-0.0.9-brightgreen.svg)](https://github.com/hegdeashwin/Protocore/releases)
 
 [![Build Status](https://travis-ci.org/hegdeashwin/Protocore.svg?branch=master)](https://travis-ci.org/hegdeashwin/Protocore)   [![Dependency Status](https://gemnasium.com/hegdeashwin/Protocore.svg)](https://gemnasium.com/hegdeashwin/Protocore)  [![Node.js version](http://img.shields.io/badge/Node.js-%3E%200.12-brightgreen.svg)](https://github.com/hegdeashwin/Protocore/) [![Built with Grunt](http://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)  [![License version](http://img.shields.io/badge/License-MIT-red.svg)](https://github.com/hegdeashwin/Protocore#license)
 
@@ -19,10 +19,12 @@ For understanding Protocore, knowledge of following JavaScript libraries/framewo
 
 Assuming that Git is already installed & running:
 ```
-git clone https://github.com/Protocore-UI/Protocore
+git clone https://github.com/Nebula-UI/Nebula.git
 ```
 
-Assuming that Node.js & Bower is already installed & running,
+### On local system:
+
+Assuming that Node.js is already installed & running,
 
 Install dependencies:
 ```
@@ -36,32 +38,57 @@ Install client-side dependencies:
 bower install
 ```
 
-Generate CSS files from LESS: (First command after installing dependencies)
-```
-grunt compileLessDev
-```
-
 To start the development server:
 ```
 node server.js
-
-OR
-
-iojs server.js
-
 ```
 or
 ```
 NODE_ENV=development node server.js
 ```
-or
-```
-npm start
-```
 
 To start the production server:
 ```
 NODE_ENV=production node server.js
+```
+
+Open and run Protocore on browser
+```
+http://localhost:8000
+```
+
+### On Docker
+
+Assuming that Docker is already installed & running.
+
+Open terminal, change directory to the repository where you cloned Protocore and start root session
+```
+sudo -s
+```
+
+Build Protocore docker image
+```
+docker build -t <username>/<repository>
+```
+
+Verify if image got successfully created
+```
+docker images
+```
+
+Run Create image in background
+```
+docker run -d <username>/<repository>
+```
+
+Verify if the images is running in background
+```
+docker ps
+```
+
+Open and run Protocore on browser
+```
+http://localhost:8000
 ```
 
 ## Protocore Experiments
