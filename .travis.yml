@@ -4,6 +4,6 @@ before_script:
 
 language: node_js
 node_js:
-  - "6.0.x"
-  - "4.4.x"
-  - "0.12.x"
+  - "6.0.0"
+  - "4.4.7"
+  - "0.12"
