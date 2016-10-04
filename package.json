@@ -33,27 +33,27 @@
     "postinstall": "npm install && bower install"
   },
   "dependencies": {
-    "express": "~4.13.0",
-    "body-parser": "~1.14.0"
+    "express": "~4.14.0",
+    "body-parser": "~1.15.2"
   },
   "devDependencies": {
-    "chai": "^3.0.0",
-    "grunt": "~0.4.4",
-    "grunt-banner": "~0.5.0",
-    "grunt-cli": "~0.1.13",
-    "grunt-contrib-clean": "~0.6.0",
-    "grunt-contrib-csslint": "~0.5.0",
-    "grunt-contrib-htmlmin": "~0.4.0",
-    "grunt-contrib-jshint": "~0.11.0",
-    "grunt-contrib-less": "~1.0.0",
-    "grunt-contrib-watch": "~0.6.0",
-    "grunt-htmlhint": "~0.4.0",
-    "grunt-jscs": "~2.1.0",
-    "grunt-jsonlint": "~1.0.4",
-    "grunt-plato": "^1.2.1",
-    "grunt-shell": "~1.1.1",
+    "grunt": "~1.0.1",
+    "grunt-banner": "~0.6.0",
+    "grunt-cli": "~1.2.0",
+    "grunt-contrib-clean": "~1.0.0",
+    "grunt-contrib-csslint": "~2.0.0",
+    "grunt-contrib-htmlmin": "~2.0.0",
+    "grunt-contrib-jshint": "~1.0.0",
+    "grunt-contrib-less": "~1.4.0",
+    "grunt-contrib-watch": "~1.0.0",
+    "grunt-htmlhint": "~0.9.13",
+    "grunt-jscs": "~3.0.1",
+    "grunt-jsonlint": "~1.1.0",
+    "grunt-plato": "^1.4.0",
+    "grunt-shell": "~2.0.0",
     "grunt-strip": "~0.2.1",
-    "mocha": "^2.2.5"
+    "mocha": "~3.1.0",
+    "chai": "~3.5.0"
   },
   "keywords": [
     "skeleton",
