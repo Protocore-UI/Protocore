@@ -25,6 +25,12 @@
 		"prod"
 	],
 	"keywords": [
-		"javascript", "jquery", "framework", "web", "rest", "restful", "node", "express", "architecture"
+		"skeleton",
+    "scaffolding",
+    "boilerplate",
+    "protocore",
+    "jquery-scaffolding",
+    "jquery-skeleton",
+    "jquery-boilerplate"
 	]
 }
