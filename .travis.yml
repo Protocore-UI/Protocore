@@ -1,7 +1,7 @@
 before_script:
   - npm install -g grunt-cli bower
   - npm install
-  - bower install --allow-root
+  - bower install
 
 language: node_js
 node_js:
