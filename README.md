@@ -1,6 +1,7 @@
 # Protocore [![GitHub version](http://img.shields.io/badge/version-0.1.0-brightgreen.svg)](https://github.com/hegdeashwin/Protocore/releases)
 
 [![Build Status](https://travis-ci.org/Protocore-UI/Protocore.svg?branch=master)](https://travis-ci.org/Protocore-UI/Protocore)   [![Dependency Status](https://gemnasium.com/hegdeashwin/Protocore.svg)](https://gemnasium.com/hegdeashwin/Protocore)  [![Node.js version](http://img.shields.io/badge/Node.js-%3E%206.0.0-brightgreen.svg)](https://github.com/hegdeashwin/Protocore/) [![Built with Grunt](http://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)  [![License version](http://img.shields.io/badge/License-MIT-red.svg)](https://github.com/hegdeashwin/Protocore#license)
+[![Supports Docker](https://img.shields.io/badge/Support-Docker-orange.svg)](https://hub.docker.com/r/hegdeashwin/protocore/)
 
 
 Protocore is an open source walking application skeleton for a typical unstructured JavaScript/jQuery web apps. You can use it to quickly bootstrap your unstructured JavaScript/jQuery web application projects.
@@ -57,7 +58,7 @@ Open and run Protocore on browser
 http://localhost:8000
 ```
 
-### On Docker
+### Using Docker
 
 Assuming that Docker is already installed & running.
 
@@ -66,9 +67,9 @@ Open terminal, change directory to the repository where you cloned Protocore and
 sudo -s
 ```
 
-Build Protocore docker image
+Get Protocore docker image
 ```
-docker build -t <username>/<repository>
+docker pull hegdeashwin/protocore
 ```
 
 Verify if image got successfully created
@@ -78,7 +79,7 @@ docker images
 
 Run Create image in background
 ```
-docker run -d <username>/<repository>
+docker run -d -p 8000:8000 hegdeashwin/protocore
 ```
 
 Verify if the images is running in background
