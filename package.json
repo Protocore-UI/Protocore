@@ -30,8 +30,7 @@
     "dev": "NODE_ENV=development node server.js",
     "start": "NODE_ENV=production node server.js",
     "docker": "NODE_ENV=production nodejs server.js",
-    "build": "grunt build",
-    "postinstall": "grunt build"
+    "build": "grunt build"
   },
   "dependencies": {
     "express": "~4.14.0",
