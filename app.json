@@ -2,8 +2,5 @@
   "name": "protocore",
   "description": "Protocore is an open source walking application skeleton for a typical unstructured JavaScript/jQuery web apps. You can use it to quickly bootstrap your unstructured JavaScript/jQuery web application projects.",
   "repository": "http://github.com/Protocore-UI/Protocore",
-  "keywords": ["skeleton", "scaffolding", "boilerplate", "protocore", "jquery-scaffolding", "jquery-skeleton", "jquery-boilerplate"],
-  "scripts": {
-    "postdeploy": "npm install && bower install --allow-root && grunt build"
-  },
+  "keywords": ["skeleton", "scaffolding", "boilerplate", "protocore", "jquery-scaffolding", "jquery-skeleton", "jquery-boilerplate"]
 }
