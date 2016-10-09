@@ -1,4 +1,4 @@
-# Protocore [![GitHub version](http://img.shields.io/badge/version-0.1.0-brightgreen.svg)](https://github.com/hegdeashwin/Protocore/releases)
+# Protocore [![GitHub version](http://img.shields.io/badge/version-0.1.1-brightgreen.svg)](https://github.com/hegdeashwin/Protocore/releases)
 
 [![Build Status](https://travis-ci.org/Protocore-UI/Protocore.svg?branch=master)](https://travis-ci.org/Protocore-UI/Protocore)   [![Dependency Status](https://gemnasium.com/hegdeashwin/Protocore.svg)](https://gemnasium.com/hegdeashwin/Protocore)  [![Node.js version](http://img.shields.io/badge/Node.js-%3E%206.0.0-brightgreen.svg)](https://github.com/hegdeashwin/Protocore/) [![Built with Grunt](http://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)  [![License version](http://img.shields.io/badge/License-MIT-red.svg)](https://github.com/hegdeashwin/Protocore#license)
 [![Supports Docker](https://img.shields.io/badge/Support-Docker-orange.svg)](https://hub.docker.com/r/hegdeashwin/protocore/)
