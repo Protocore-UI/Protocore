@@ -8,12 +8,12 @@ requirejs.config({
         "configFile": "../tests/configs/config",
         "testsDir": "../tests/apps",
         "src": "../src/apps",
-        'jquery': '../src/bower_components/jquery/jquery.min',
-        'handlebars': '../src/bower_components/handlebars/handlebars.min',
-        'signals': 'bower_components/js-signals/dist/signals.min',
-        'hasher': 'bower_components/hasher/dist/js/hasher.min',
-        'crossroads': 'bower_components/crossroads/dist/crossroads.min',
-        'text': 'bower_components/requirejs-text/text'
+        'jquery': '../bower_components/jquery/jquery.min',
+        'handlebars': '../bower_components/handlebars/handlebars.min',
+        'signals': '../bower_components/js-signals/dist/signals.min',
+        'hasher': '../bower_components/hasher/dist/js/hasher.min',
+        'crossroads': '../bower_components/crossroads/dist/crossroads.min',
+        'text': '../bower_components/requirejs-text/text'
     },
 
     shim: {

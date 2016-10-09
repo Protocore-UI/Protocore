@@ -18,11 +18,12 @@ module.exports = function(grunt) {
         shell: {
             uglify: {
                 command: [
-                    "node src/bower_components/rjs/dist/r.js -o config/build/optimize-build.js",
-                    "node src/bower_components/rjs/dist/r.js -o config/build/copy-build.js",
+                    "node bower_components/rjs/dist/r.js -o config/build/optimize-build.js",
+                    "node bower_components/rjs/dist/r.js -o config/build/copy-build.js",
                     "rm src/main-optimize.js",
                     "rm prod/main.js",
-                    "mv prod/main-optimize.js prod/main.js"
+                    "mv prod/main-optimize.js prod/main.js",
+                    "cp -r bower_components prod/bower_components"
                 ].join('&&')
             }
         },
