@@ -24,7 +24,7 @@ coverage
 # https://www.npmjs.org/doc/misc/npm-faq.html#should-i-check-my-node_modules-folder-into-git-
 node_modules
 release
-/bower_components
+bower_components
 reports
 coverage
 
